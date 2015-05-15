@@ -43,7 +43,7 @@ class Yolp {
 
     final static function curlSetOpt($options = array())
     {
-        self::$curl_options = array_merge(self::$curl_options, $options);
+        self::$curl_options = array_replace(self::$curl_options, $options);
     }
 
     public function setApiKey($api_key)
@@ -63,7 +63,7 @@ class Yolp {
     public function setParams($params = NULL)
     {
         if (!empty($params) && is_array($params)) {
-            $this->params = array_merge($this->params, $params);
+            $this->params = array_replace($this->params, $params);
         }
     }
 
