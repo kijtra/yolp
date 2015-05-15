@@ -1,0 +1,23 @@
+{
+    "name": "kijtra/yolp",
+    "description": "Yahoo JAPAN YOLP API library for PHP",
+    "license": "MIT",
+    "keywords": ["yahoojp", "yolp", "geolocation", "geocoding", "api"],
+    "homepage": "https://github.com/kijtra/yolp",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kijtra",
+            "email": "kijtra@gmail.com",
+            "homepage": "http://kijtra.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": [
+			"src/Yolp/"
+		]
+	}
+}
