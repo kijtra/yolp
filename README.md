@@ -1,1 +1,1 @@
-# Yahoo JAPAN YOLP
+# Yahoo JAPAN YOLP library for PHP
