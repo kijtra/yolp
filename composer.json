@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Kijtra": "src/Yolp"
+            "Kijtra": "src"
         }
 	}
 }
