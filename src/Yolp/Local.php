@@ -14,7 +14,7 @@ use Kijtra\Yolp;
 /**
  * @author Kijtra <kijtra@gmail.com>
  */
-class LocalSearch extends Yolp
+class Local extends Yolp
 {
     public $base_url = 'http://search.olp.yahooapis.jp/OpenLocalPlatform/V1/localSearch';
     public $params = array();
