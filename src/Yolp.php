@@ -77,8 +77,11 @@ class Yolp {
         $params['appid'] = self::$api_key;
         $this->request_url = $url.'?'.http_build_query($params);
 
-        $ch = curl_init($this->request_url);
-	    curl_setopt_array($ch, self::$curl_options);
+        $options = self::$curl_options;
+        $options[CURLOPT_URL] = $this->request_url;
+
+        $ch = curl_init();
+	    curl_setopt_array($ch, $options);
 	    $res = curl_exec($ch);
         $errno = curl_errno($ch);
         $error = curl_error($ch);
