@@ -110,4 +110,22 @@ class Yolp {
 
         return $data;
     }
+
+    public function validLat($value = NULL)
+    {
+        if (!empty($value)) {
+            return (preg_match('/\A([\-\+]?\d{1,2}\.\d+)\z/', $value));
+        }
+
+        return FLASE;
+    }
+
+    public function validLon($value = NULL)
+    {
+        if (!empty($value)) {
+            return (preg_match('/\A([\-\+]?\d{1,3}\.\d+)\z/', $value));
+        }
+
+        return FLASE;
+    }
 }
