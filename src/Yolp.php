@@ -117,7 +117,7 @@ class Yolp {
             return (preg_match('/\A([\-\+]?\d{1,2}\.\d+)\z/', $value));
         }
 
-        return FLASE;
+        return FALSE;
     }
 
     public function validLon($value = NULL)
@@ -126,6 +126,6 @@ class Yolp {
             return (preg_match('/\A([\-\+]?\d{1,3}\.\d+)\z/', $value));
         }
 
-        return FLASE;
+        return FALSE;
     }
 }
